@@ -56,7 +56,7 @@ jobs:
 
       - name: Build docker image
         run: |
-          docker build -t   .
+          docker build -t akash501/boardgame:latest .
 
 
       - name: Trivy-file-scan
@@ -71,7 +71,7 @@ jobs:
 
       - name: Push Docker Image
         run: |
-          docker push adijaiswal/boardgame:latest
+          docker push akash501/boardgame:latest
 
       
        
